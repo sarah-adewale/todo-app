@@ -23,7 +23,7 @@
             <form action="/" method="POST" class="todo-header">
                 <input type="text" name="title" value="title">
                 <textarea name="content" id="" cols="45" rows="6">content</textarea>
-                <button type="submit" class="button"><span class="fas fa-plus"></span>Add Text</button>
+                <button type="submit" class="todo-header-button"><span class="fas fa-plus"></span>Add Text</button>
             </form>
         
             <ul class="todo-list">
@@ -32,7 +32,7 @@
                         <div class="todo-list-item-title">
                             <%= data.title %>
                         </div>
-                        <div class="todo-list-item-title">
+                        <div class="todo-list-item-content">
                             <%= data.content %>
                         </div>
                         <a href="/edit/<%=data._id %>" class="edit"><span class="fas fa-edit"></span></a>
