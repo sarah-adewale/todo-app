@@ -15,6 +15,6 @@ const todoTaskSchema = new mongoose.Schema({
     }
 })
 //exporting your model
-module.exports = mongoose.model('TodoTask', todoTaskSchema, 'tasks')
+module.exports = mongoose.model('TodoTask', todoTaskSchema, 'tasks') //name of TodoTask, assigning to the schema, tasks is the collection name(optional args)
 
 
